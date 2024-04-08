@@ -21,5 +21,6 @@
 		format json # set access log format to json mode
 	}
 	reverse_proxy @api {$BACKEND_HOST}
+	reverse_proxy @rails {$RAILS_HOST}
 	reverse_proxy {$FRONTEND_HOST} # proxy all requests for /* to the frontend, configure this variable in the service settings
 }
