@@ -16,6 +16,7 @@
 # site block, listens on the $PORT environment variable, automatically assigned by railway
 :{$PORT} {
 	@api host api.melissahale.dev
+	@rails host rails.melissahale.dev
 	# access logs
 	log {
 		format json # set access log format to json mode
